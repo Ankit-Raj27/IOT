@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import man from "./man.png";
+import background1 from "../Images/background1.png";
 
 const Container = styled.div`
   width: 100%;
@@ -8,7 +9,7 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  background: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpohskVIq0at5mZyvoZy6JhybWjNhO4YDnQBKDT2JBA3eEtmJk");
+  background: url("${background1}");
 `;
 
 const Left = styled.div`
