@@ -48,3 +48,80 @@ export const WhyusData = [
         link:"View our team",
     },
 ]
+
+export const CardData = [
+    {
+        id:1,
+        img:"https://img.freepik.com/premium-photo/yellow-white-helmet-safety-construction-site_34152-531.jpg?w=996",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.",
+        author:"By Himanshu , 03/02/2022",
+    },
+    {
+        id:2,
+        img:"https://img.freepik.com/premium-photo/yellow-white-helmet-safety-construction-site_34152-531.jpg?w=996",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.",
+        author:"By Himanshu , 03/02/2022",
+    },
+    {
+        id:3,
+        img:"https://img.freepik.com/premium-photo/yellow-white-helmet-safety-construction-site_34152-531.jpg?w=996",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.",
+        author:"By Himanshu , 03/02/2022",
+    },
+    {
+        id:4,
+        img:"https://img.freepik.com/premium-photo/yellow-white-helmet-safety-construction-site_34152-531.jpg?w=996",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.",
+        author:"By Himanshu , 03/02/2022",
+    },
+    {
+        id:5,
+        img:"https://img.freepik.com/premium-photo/yellow-white-helmet-safety-construction-site_34152-531.jpg?w=996",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.",
+        author:"By Himanshu , 03/02/2022",
+    },
+    {
+        id:6,
+        img:"https://img.freepik.com/premium-photo/yellow-white-helmet-safety-construction-site_34152-531.jpg?w=996",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.",
+        author:"By Himanshu , 03/02/2022",
+    },
+    {
+        id:7,
+        img:"https://img.freepik.com/premium-photo/yellow-white-helmet-safety-construction-site_34152-531.jpg?w=996",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.",
+        author:"By Himanshu , 03/02/2022",
+    },
+    {
+        id:8,
+        img:"https://img.freepik.com/premium-photo/yellow-white-helmet-safety-construction-site_34152-531.jpg?w=996",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet non sapien auctor.",
+        author:"By Himanshu , 03/02/2022",
+    },
+]
+export const feedback = [
+    {
+        id:1,
+        img:"https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19637.jpg?w=996&t=st=1677437970~exp=1677438570~hmac=10c25c16234406bf8f7d4515d0feb8f47d01b09834eb458044a7463d312635af",
+        name:"Abc",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae pulvinar ipsum at nunc. Neque, orci faucibus sit feugiat gravida urna. Tristique volutpat.",
+    },
+    {
+        id:2,
+        img:"https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19637.jpg?w=996&t=st=1677437970~exp=1677438570~hmac=10c25c16234406bf8f7d4515d0feb8f47d01b09834eb458044a7463d312635af",
+        name:"Abc",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae pulvinar ipsum at nunc. Neque, orci faucibus sit feugiat gravida urna. Tristique volutpat.",
+    },
+    {
+        id:3,
+        img:"https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19637.jpg?w=996&t=st=1677437970~exp=1677438570~hmac=10c25c16234406bf8f7d4515d0feb8f47d01b09834eb458044a7463d312635af",
+        name:"Abc",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae pulvinar ipsum at nunc. Neque, orci faucibus sit feugiat gravida urna. Tristique volutpat.",
+    },
+    {
+        id:4,
+        img:"https://img.freepik.com/free-photo/handsome-young-man-with-new-stylish-haircut_176420-19637.jpg?w=996&t=st=1677437970~exp=1677438570~hmac=10c25c16234406bf8f7d4515d0feb8f47d01b09834eb458044a7463d312635af",
+        name:"Abc",
+        desc:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae pulvinar ipsum at nunc. Neque, orci faucibus sit feugiat gravida urna. Tristique volutpat.",
+    },
+]
