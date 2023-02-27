@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutContainer from '../Components/aboutContainer'
-// import Carousel from '../Components/Carousel'
+import Carousel from '../Components/Carousel'
 import Contacts from '../Components/contact'
 import Feedback from '../Components/feedback'
 import Footer from '../Components/footer'
@@ -14,7 +14,8 @@ import SearchOverlay from './searchOverlay'
 const Home = () => {
   return (
     <div>
-      <Contacts />
+      <Carousel/>
+      {/* <Contacts />
       <Navbar />
       <SearchOverlay />
       <Poster />
@@ -23,9 +24,7 @@ const Home = () => {
       <Whyus />
       <News />
       <Feedback />
-      <Footer />
-      {/* <Carousel/> */}
-
+      <Footer /> */}
     </div>
   )
 }
