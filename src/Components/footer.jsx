@@ -2,15 +2,16 @@ import {
   Facebook,
   Instagram,
   Twitter,
-//   LocationOn,
-//   LocalPhone,
-//   MailOutlineOutlined,
+  //   LocationOn,
+  //   LocalPhone,
+  //   MailOutlineOutlined,
 } from "@material-ui/icons";
 import styled from "styled-components";
 import logo1 from "../Images/logo1.png";
 
 const Container = styled.div`
   display: flex;
+  position: absolute;
   background-color: #061c41;
   color: white;
 `;
@@ -31,8 +32,9 @@ const Desc = styled.p`
   width: 50%;
 `;
 const SocialContainer = styled.div`
-display: flex;
-margin-20px;
+display: grid;
+flex:1;
+grid-template-columns: repeat(3, 60px);
 `;
 const SocialIcon = styled.div`
   width: 40px;
@@ -51,7 +53,6 @@ const Center = styled.div`
 `;
 const Title = styled.h3`
   margin-bottom: 30px;
-  
 `;
 const List = styled.ul`
   margin: 0;
@@ -69,13 +70,47 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  grid-align: right;
 `;
-
+const SearchContainer = styled.div`
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  width: 50%;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  padding: 5px;
+`;
 const Input = styled.input`
-
+  border: 1px solid white;
+  color: white;
+  label-align: center;
+  background-color: #061c41;
+  padding: 10px 30px;
+  border-radius: 5px;
+  type: text;
 `;
 const Button = styled.button`
+  font-size: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 0;
+  left:0;
+  background-color: orange;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  border-radius: 7px;
+  border: none;
 `;
+const Title1 = styled.h5`
+margin-top:30px;
+`;
+
+
 const Footer = () => {
   return (
     <Container>
@@ -115,11 +150,11 @@ const Footer = () => {
           <MailOutlineOutlined style={{ marginRight: "10px" }} />{" "}
           contact@lama.dev
         </ContactItem> */}
-        <Input>
-        </Input>
-        <Button>
-
-        </Button>
+        <SearchContainer>
+          <Input type="text" placeholder="Your Email"></Input>
+          <Button>Subscribe</Button>
+        </SearchContainer>
+          <Title1>Follow us on.</Title1>
         <SocialContainer>
           <SocialIcon color="E4405F">
             <Instagram />
@@ -132,6 +167,7 @@ const Footer = () => {
           </SocialIcon>
         </SocialContainer>
       </Right>
+      <div style={{ borderTop: "2px solid #fff ", marginLeft: 20, marginRight: 20 }}></div>
     </Container>
   );
 };

@@ -53,7 +53,6 @@ const NewsItem = ({item}) => {
     <div>
       <Container>
       <Wrapper>
-
         <Image src={item.img} />
         <Info>
           <Desc>{item.desc}</Desc>
