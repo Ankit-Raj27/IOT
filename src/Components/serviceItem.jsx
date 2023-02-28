@@ -3,10 +3,13 @@ import styled from "styled-components";
 
 const Container = styled.div`
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     max-width: 40rem;
     margin:1rem;
     border:none;
+      display: grid;
+      ${'' /* font-size:10xp; */}
+  grid-template-columns: repeat(2,200px)
 `;
 
 const Image = styled.img`

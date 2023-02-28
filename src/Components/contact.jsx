@@ -11,29 +11,29 @@ import styled from "styled-components";
 
 const Container = styled.div`
   padding-top: 10px;
-  height: 25px;
+  height: 40px;
   background-color: #ecf3ff;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
 `;
 
 const Info = styled.div`
   flex: 1;
-  margin-left:5px;
+  ${'' /* margin-left:5px; */}
 `;
 const Logo = styled.div`
   margin-left: 8px;
-  margin-right: 8px;
+  ${'' /* margin-right: 8px; */}
 `;
 const Social = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1000px;
+  margin-left: 800px;
 `;
 
 const Contacts = () => {
@@ -62,7 +62,7 @@ const Contacts = () => {
           <LinkedIn />
         </Logo>
       </Social>
-      <Info style={{marginLeft : "30px" }}>Contact Us</Info>
+      <Info style={{marginLeft : "4 0px" }}>Contact Us</Info>
     </Container>
   );
 };

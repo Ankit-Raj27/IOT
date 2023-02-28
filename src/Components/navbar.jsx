@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Search } from "@material-ui/icons";
+import { Search, SearchOutlined } from "@material-ui/icons";
 import { Badge } from "@mui/material";
 import { ShoppingCartCheckoutRounded } from "@mui/icons-material";
 
@@ -60,8 +60,32 @@ const LogoK = styled.img`
   width: 50px;
   margin-left: 30px;
 `;
-const Navbar = () => {
 
+const SearchOverlayContainer = styled.div`
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+`;
+const Cross = styled.span``;
+
+const Content = styled.div`
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+`;
+
+const Form = styled.form``;
+const Navbar = () => {
   return (
     <div>
       <Container>
@@ -69,12 +93,24 @@ const Navbar = () => {
           <Left>
             <Logo src="https://download.logo.wine/logo/The_Boring_Company/The_Boring_Company-Logo.wine.png"></Logo>
             <SearchContainer>
-              <Search
-                style={{ fontSize: "30px" }}
-              ></Search>
-              
+              <Search style={{ fontSize: "30px" }}></Search>
               <Input></Input>
             </SearchContainer>
+            <SearchOverlayContainer id="myOverlay" className="overlay">
+              <Cross
+                className="closebtn"
+                onclick="closeSearch()"
+                title="Close-Overlay"
+              ></Cross>
+              <Content>
+                <Form action="/action_page.php">
+                  <Input type="text" placeholder="Search.." name="search" />
+                  <SearchOutlined type="submit">
+                    <i class="fa fa-search"></i>
+                  </SearchOutlined>
+                </Form>
+              </Content>
+            </SearchOverlayContainer>
           </Left>
           <Right>
             <MenuItems>Training</MenuItems>

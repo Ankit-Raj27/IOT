@@ -13,11 +13,12 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   width: 90%;
+
   height: 90%;
   background: white;
   top: 5%;
-  left: 5%;
-  bottom: 20%;
+  ${'' /* left: 5%; */}
+  bottom: 30%;
   opacity: 1;
   border: 1px solid black;
   box-shadow: 5px 5px 5px 5px gray;
@@ -38,9 +39,9 @@ const Title2 = styled.p`
 const ServiceItemContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 20px;
 `;
 
 const Services = () => {

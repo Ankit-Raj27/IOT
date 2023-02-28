@@ -6,7 +6,6 @@ import { feedback } from "./data";
 import FeedbackItem from "./feedbackItem";
 import { useState } from "react";
 
-
 const Container = styled.div`
   background: url("${background4}");
   overflow: hidden;
@@ -33,6 +32,8 @@ const Arrow = styled.div`
   border-radius: 24px;
   background-color: white;
   border: 1px solid #ddd;
+  left : ${(props) => props.direction === "left" && "40px"};
+right : ${(props) => props.direction === "right" && "40px"};
 `;
 
 const Review = styled.div`
@@ -47,7 +48,7 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const Feedback = (props) => {
+const Feedback = () => {
   // const { children } = props;
   const [SlideIndex, setSlideIndex] = useState(0);
 
@@ -58,7 +59,6 @@ const Feedback = (props) => {
       setSlideIndex(SlideIndex < 2 ? SlideIndex + 1 : 0);
     }
   };
-  
 
   return (
     <div>
@@ -69,7 +69,11 @@ const Feedback = (props) => {
             We belive in 100% client satisfaction and here is what they say
             about us.
           </Title2>
-          <Arrow className="left-arrow" direction="left" onClick={() => handleClick("left")}>
+          <Arrow
+            className="left-arrow"
+            direction="left"
+            onClick={() => handleClick("left")}
+          >
             <ArrowBackIos />
           </Arrow>
           <Review className="carousel-container">
@@ -79,7 +83,11 @@ const Feedback = (props) => {
               ))}
             </Wrapper>
           </Review>
-          <Arrow className="right-arrow" direction="right" onClick={() => handleClick("right")}>
+          <Arrow
+            className="right-arrow"
+            direction="right"
+            onClick={() => handleClick("right")}
+          >
             <ArrowForwardIos />
           </Arrow>
         </Title>
